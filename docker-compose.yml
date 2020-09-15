@@ -1,0 +1,10 @@
+version: "3.6"
+services:
+  py-spark-nnotebook:
+    image: jupyter/pyspark-notebook
+    ports:
+      - 8888:8888
+    environment: 
+      - GRANT_SUDO=yes
+    volumes: 
+      - ./work:/home/jovyan/work
